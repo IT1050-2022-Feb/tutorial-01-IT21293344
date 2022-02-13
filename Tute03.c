@@ -12,8 +12,28 @@ n -> 1-
 sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
+// function main begins program execution 
 int main() {
   
+  /* variable definition */
+  int n, count, sum = 0;
+
+  /* User Enter a Number */
+  printf ("Enter a number : ");
+  scanf ("%d", &n);
+
+  /* for loop execution */
+  for (count = 1; count <= n; count++)
+  {
+
+    sum += count;
+
+  }// End for loop execution
+
+  /* Display The the sum of the numbers from 1 to n */
+  printf("Total of the numbers = %d", sum);
+
   return 0;
-}
+
+}//end of function main
 
